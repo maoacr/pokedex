@@ -14,7 +14,6 @@ const Provider = ({ children }) => {
       })
       .then((data) => setPokemons(data.pokemon_entries));
     }, []);
-    console.log(pokemons)
   return <Context.Provider value={pokemons}>{children}</Context.Provider>;
 };
 

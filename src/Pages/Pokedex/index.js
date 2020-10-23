@@ -1,17 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import {Layout} from './styles';
 
 import Navbar from '../../Components/Navbar';
 import Filters from '../../Components/Filters';
-import Pokemons from '../../Components/Pokemons';
+import PokemonsList from '../../Components/PokemonsList';
 
 const Pokedex = () => {
   return (
     <Layout>
       <Navbar />
       <Filters />
-      <Pokemons />
+      <PokemonsList />
     </Layout>
   )
 }
