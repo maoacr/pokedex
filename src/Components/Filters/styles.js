@@ -12,14 +12,29 @@ export const FiltersCard = styled.aside`
   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.12);
 ` 
 
-export const TypeFilter = styled.form`
+export const TypeFilter = styled.div`
 
 `
 
-export const ColorFilter = styled.form`
+export const ColorFilter = styled.div`
 
 `
 
-export const GenderFilter = styled.form`
+export const GenderFilter = styled.div`
+
+`
+export const Blue = styled.div`
+
+`
+export const Red = styled.div`
+
+`
+export const Yellow = styled.div`
+
+`
+export const Purple = styled.div`
+
+`
+export const Green = styled.div`
 
 `
