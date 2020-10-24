@@ -8,7 +8,7 @@ import Logo from '../../assets/logo.png';
 const Navbar = () => {
     return(
       <Wrapper >
-        <Pokelogo src={Logo} alt="Logo Pokedex" />
+        <a href="/"><Pokelogo src={Logo} alt="Logo Pokedex" /></a>
         <Search />
       </Wrapper>
     )

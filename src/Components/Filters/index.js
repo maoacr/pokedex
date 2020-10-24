@@ -1,6 +1,12 @@
 import React, { useContext } from 'react';
 import { Context } from '../../Context';
-import { FiltersCard, TypeFilter, ColorFilter, GenderFilter, Red, Green, Yellow, Blue, Purple } from './styles';
+import { 
+  FiltersCard, 
+  TypeFilter, 
+  ColorFilter, 
+  GenderFilter, 
+  Button 
+} from './styles';
 
 const Filters = () => {
 
@@ -19,16 +25,12 @@ const Filters = () => {
       </TypeFilter>
       <h3>Color</h3>
       <ColorFilter>
-        <Red></Red>
-        <Green></Green>
-        <Yellow></Yellow>
-        <Blue></Blue>
-        <Purple></Purple>
+
       </ColorFilter>
       <h3>Gender</h3>
       <GenderFilter>
-          <button onClick={getMalePokemons} type="button">Male</button>
-          <button onClick={getFemalePokemons} type="button">Female</button>
+          <Button onClick={getMalePokemons} type="button">Male</Button>
+          <Button onClick={getFemalePokemons} type="button">Female</Button>
       </GenderFilter>
 
     </FiltersCard>

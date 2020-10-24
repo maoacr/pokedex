@@ -11,6 +11,9 @@ export const SearchBox = styled.div`
   justify-content: flex-end;
   cursor: pointer;
   margin-right: 20px;
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
 `
 export const Input = styled.input`
   border: none;

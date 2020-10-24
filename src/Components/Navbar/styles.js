@@ -8,9 +8,19 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+  } 
 `
 
 export const Pokelogo = styled.img`
   width: 120px;
   margin-left: 20px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    margin: 30px 0;
+  } 
 `
