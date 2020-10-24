@@ -16,7 +16,7 @@ export const Card = styled.div`
   height: 100%; 
   background-color: #FFF;
   border-radius: 50%;
-  border: 3px solid ${Colors.mainBlue};
+  border: 3px solid ${Colors.darkBlue};
 `
 export const PokemonImg = styled.img`
   width: 100px;

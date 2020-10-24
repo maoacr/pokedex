@@ -14,14 +14,15 @@ export const FiltersCard = styled.aside`
   -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.12);
   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.12);
   text-align: center;
+  background-color: ${Colors.mainBlue};
+  color: white;
 ` 
 export const Button = styled.button`
   width: 80%;
   margin: 0 5px 5px;
   padding: 8px 24px;
-  border: 2px solid ${Colors.mainBlue};
-  color: ${Colors.mainBlue};
-  background-color: ${Colors.yellow};
+  color: ${Colors.yellow};
+  background-color: ${Colors.darkBlue};
   border-radius: 25px;
   font-weight: bold;
   outline: none;
