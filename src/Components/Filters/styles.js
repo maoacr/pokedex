@@ -30,14 +30,6 @@ export const Button = styled.button`
     cursor: pointer;
   }
 `
-export const TypeFilter = styled.div`
-
-`
-
-export const ColorFilter = styled.div`
-
-`
-
 export const GenderFilter = styled.div`
 
 `
