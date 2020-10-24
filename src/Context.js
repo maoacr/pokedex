@@ -1,7 +1,7 @@
 
 import React, { createContext, useState, useEffect } from 'react';
 // import Mock from '../mock.json';
-export const Context = createContext();
+const Context = createContext();
 
 const Provider = ({ children }) => {
   const [pokemons, setPokemons] = useState({});
@@ -17,4 +17,4 @@ const Provider = ({ children }) => {
   return <Context.Provider value={pokemons}>{children}</Context.Provider>;
 };
 
-export default Provider;
+export { Context, Provider };
