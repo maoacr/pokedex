@@ -6,33 +6,20 @@ import { Main } from "./styles";
 
 const PokemonsList = () => {
 
-  const data = useContext(Context);
-
-  console.log(data);
+  const {pokemons} = useContext(Context);
 
       return (
         <Main>
-          <PokemonCard />
+          {
+            pokemons.map((item) => {
+              return <PokemonCard name={item.name} id={item.id} key={item.id} />
+            })
+          }
         </Main>
       );
 
-
   // const Image = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon-id}.png`
 
-    // return(
-    //   <Context.Consumer >
-    //   {
-    //     (data) => {
-    //       console.log(data)
-    //       return (
-    //         <Main>
-    //           <PokemonCard />
-    //         </Main>
-    //       )
-    //     }
-    //   }
-    //   </Context.Consumer>
-    // )
 };
 
 export default PokemonsList;

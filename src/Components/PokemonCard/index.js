@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
 import {
   CardContainer,
   Card,
@@ -7,12 +6,16 @@ import {
   PokemonName
 } from './styles';
 
-const PokemonCard = () => {
+const PokemonCard = ({name, id}) => {
+
+  const codeImg = `${id}`.padStart(3, "0");
+
+
   return(
     <CardContainer>
       <Card>
-        <PokemonImg></PokemonImg>
-        <PokemonName>Name</PokemonName>
+        <PokemonImg src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${codeImg}.png`}></PokemonImg>
+        <PokemonName>{name}</PokemonName>
       </Card>
     </CardContainer>
   )
